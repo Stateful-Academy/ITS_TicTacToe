@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,12 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Player x Please make your move)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WO9-MN-hXA">
-                                <rect key="frame" x="10" y="84" width="394" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7b-ir-vFz">
                                 <rect key="frame" x="56" y="302" width="302" height="302"/>
                                 <subviews>
@@ -41,9 +34,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCu-ma-uaq"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,9 +67,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBw-wX-w3q"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,9 +100,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EsI-2a-ywz"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -154,9 +138,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHL-v0-1JE"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -191,9 +172,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ksO-ld-0qL"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -227,9 +205,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LzJ-EL-4EB"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -268,9 +243,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Bc-kg-ObF"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -304,9 +276,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Wt-eN-eaR"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -340,9 +309,6 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpL-yj-QDM"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -375,35 +341,15 @@
                                     <constraint firstAttribute="height" constant="302" id="x5n-XU-bIa"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeS-6u-gNR">
-                                <rect key="frame" x="56" y="644" width="302" height="48.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.15744033460000001" green="0.92504143709999997" blue="0.99998575450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Play Again?">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="rematchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aya-Jn-05H"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1083266214" green="0.1083283797" blue="0.1385256946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WO9-MN-hXA" secondAttribute="trailing" constant="10" id="8hp-vQ-erl"/>
                             <constraint firstItem="R7b-ir-vFz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ath-Rs-S3a"/>
-                            <constraint firstItem="VeS-6u-gNR" firstAttribute="width" secondItem="R7b-ir-vFz" secondAttribute="width" id="Be1-RG-q6z"/>
-                            <constraint firstItem="WO9-MN-hXA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="HT7-VU-f39"/>
                             <constraint firstItem="R7b-ir-vFz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Jo9-C6-GQG"/>
-                            <constraint firstItem="WO9-MN-hXA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Kd3-XT-se3"/>
-                            <constraint firstItem="VeS-6u-gNR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VfX-tz-lA5"/>
-                            <constraint firstItem="WO9-MN-hXA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kko-vD-ZtF"/>
-                            <constraint firstItem="VeS-6u-gNR" firstAttribute="top" secondItem="R7b-ir-vFz" secondAttribute="bottom" constant="40" id="yhD-wT-CnO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="annoucementLabel" destination="WO9-MN-hXA" id="0mv-Ev-gDe"/>
                         <outlet property="box0" destination="OUz-O9-oZ7" id="cJr-qM-EV9"/>
                         <outlet property="box0Image" destination="V5m-or-Yne" id="Rza-4g-b2R"/>
                         <outlet property="box1" destination="2GE-Py-zfc" id="bxS-Jb-SLt"/>
@@ -416,13 +362,6 @@
                         <outlet property="box4Image" destination="XIb-ky-rXP" id="E6z-hD-2ye"/>
                         <outlet property="box5" destination="ygD-8X-gzc" id="RJ6-Yu-SQs"/>
                         <outlet property="box5Image" destination="4bj-CY-cXI" id="KG6-71-SsH"/>
-                        <outlet property="box6" destination="fkO-y4-0n8" id="Yl8-G1-gEF"/>
-                        <outlet property="box6Image" destination="5Dl-Um-k4x" id="3Gt-tr-b9b"/>
-                        <outlet property="box7" destination="bsV-Bm-de3" id="ep7-eP-QaV"/>
-                        <outlet property="box7Image" destination="oP9-wa-GSY" id="jZM-a5-bc4"/>
-                        <outlet property="box8" destination="ImA-TH-bA1" id="YHL-2P-1jG"/>
-                        <outlet property="box8Image" destination="BP7-9s-E60" id="WGP-Df-ncM"/>
-                        <outlet property="rematchButton" destination="VeS-6u-gNR" id="NaK-tR-Bin"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
