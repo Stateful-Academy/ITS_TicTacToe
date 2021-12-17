@@ -2,9 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,6 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Player x Please make your move)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WO9-MN-hXA">
+                                <rect key="frame" x="10" y="84" width="394" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7b-ir-vFz">
                                 <rect key="frame" x="56" y="302" width="302" height="302"/>
                                 <subviews>
@@ -31,12 +37,12 @@
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V5m-or-Yne">
                                                                 <rect key="frame" x="5" y="5" width="90" height="90"/>
                                                             </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUz-O9-oZ7">
+                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUz-O9-oZ7">
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VkL-MK-eS2"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCu-ma-uaq"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -56,7 +62,7 @@
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUL-cx-otL" userLabel="vertSpacerView">
                                                         <rect key="frame" x="100" y="0.0" width="1" height="100"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="Quh-Mt-iFJ"/>
                                                         </constraints>
@@ -72,7 +78,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldw-jb-kEd"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBw-wX-w3q"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -92,7 +98,7 @@
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-59-Mov" userLabel="vertSpacerView">
                                                         <rect key="frame" x="201" y="0.0" width="1" height="100"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="i3g-zg-HEb"/>
                                                         </constraints>
@@ -108,7 +114,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N5g-sw-j9J"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EsI-2a-ywz"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -130,7 +136,7 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1H-SE-2B7" userLabel="horiSpacerView">
                                                 <rect key="frame" x="0.0" y="100" width="302" height="1"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="nNa-wV-Qxj"/>
                                                 </constraints>
@@ -149,7 +155,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRJ-Qj-Ijx"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHL-v0-1JE"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -169,7 +175,7 @@
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ns8-aX-SLq" userLabel="vertSpacerView">
                                                         <rect key="frame" x="100" y="0.0" width="1" height="100"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="JVY-gD-s5N"/>
                                                         </constraints>
@@ -186,7 +192,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qy-Yc-kQA"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ksO-ld-0qL"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -206,7 +212,7 @@
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFE-Uz-qPm" userLabel="vertSpacerView">
                                                         <rect key="frame" x="201" y="0.0" width="1" height="100"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="Ida-hQ-ZLb"/>
                                                         </constraints>
@@ -222,7 +228,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jt6-3x-Hme"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LzJ-EL-4EB"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -244,7 +250,7 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVg-TK-4bk" userLabel="horiSpacerView">
                                                 <rect key="frame" x="0.0" y="201" width="302" height="1"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="DHD-I5-oHH"/>
                                                 </constraints>
@@ -263,7 +269,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FI1-Te-FmO"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Bc-kg-ObF"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -283,7 +289,7 @@
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ti0-rB-U5c" userLabel="vertSpacerView">
                                                         <rect key="frame" x="100" y="0.0" width="1" height="100"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="BHf-y3-R23"/>
                                                         </constraints>
@@ -299,7 +305,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="029-6x-g2r"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Wt-eN-eaR"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -319,7 +325,7 @@
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSe-zT-zuG" userLabel="vertSpacerView">
                                                         <rect key="frame" x="201" y="0.0" width="1" height="100"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="SJG-om-50G"/>
                                                         </constraints>
@@ -330,12 +336,12 @@
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BP7-9s-E60">
                                                                 <rect key="frame" x="5" y="5" width="90" height="90"/>
                                                             </imageView>
-                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-TH-bA1">
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-TH-bA1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                                 <connections>
-                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKf-vO-e0K"/>
+                                                                    <action selector="boxTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpL-yj-QDM"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -369,66 +375,59 @@
                                     <constraint firstAttribute="height" constant="302" id="x5n-XU-bIa"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeS-6u-gNR">
+                                <rect key="frame" x="56" y="644" width="302" height="48.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.15744033460000001" green="0.92504143709999997" blue="0.99998575450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play Again?">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rematchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aya-Jn-05H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.1083266214" green="0.1083283797" blue="0.1385256946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WO9-MN-hXA" secondAttribute="trailing" constant="10" id="8hp-vQ-erl"/>
                             <constraint firstItem="R7b-ir-vFz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ath-Rs-S3a"/>
+                            <constraint firstItem="VeS-6u-gNR" firstAttribute="width" secondItem="R7b-ir-vFz" secondAttribute="width" id="Be1-RG-q6z"/>
+                            <constraint firstItem="WO9-MN-hXA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="HT7-VU-f39"/>
                             <constraint firstItem="R7b-ir-vFz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Jo9-C6-GQG"/>
+                            <constraint firstItem="WO9-MN-hXA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Kd3-XT-se3"/>
+                            <constraint firstItem="VeS-6u-gNR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VfX-tz-lA5"/>
+                            <constraint firstItem="WO9-MN-hXA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kko-vD-ZtF"/>
+                            <constraint firstItem="VeS-6u-gNR" firstAttribute="top" secondItem="R7b-ir-vFz" secondAttribute="bottom" constant="40" id="yhD-wT-CnO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="box1" destination="OUz-O9-oZ7" id="Hlx-TH-3Gg"/>
-                        <outlet property="box1Image" destination="V5m-or-Yne" id="wVh-p3-7BR"/>
-                        <outlet property="box2" destination="2GE-Py-zfc" id="EoO-GT-bcx"/>
-                        <outlet property="box2Image" destination="o26-r2-ttj" id="GTU-Ka-BRQ"/>
-                        <outlet property="box3" destination="c3r-7W-ovv" id="eni-il-wk3"/>
-                        <outlet property="box3Image" destination="5yu-5O-1YP" id="eVh-vM-GYu"/>
-                        <outlet property="box4" destination="vCo-5e-BDR" id="n9z-TS-3lu"/>
-                        <outlet property="box4Image" destination="GTy-VT-k68" id="5aZ-Pb-BlP"/>
-                        <outlet property="box5" destination="O5p-Ki-4ee" id="a6n-5B-s4i"/>
-                        <outlet property="box5Image" destination="XIb-ky-rXP" id="2Tw-Yy-tSS"/>
-                        <outlet property="box6" destination="ygD-8X-gzc" id="AOG-8m-Q0a"/>
-                        <outlet property="box6Image" destination="4bj-CY-cXI" id="TGm-i2-YuQ"/>
-                        <outlet property="box7" destination="fkO-y4-0n8" id="rUx-gZ-m5J"/>
-                        <outlet property="box7Image" destination="5Dl-Um-k4x" id="f05-sh-Hs9"/>
-                        <outlet property="box8" destination="bsV-Bm-de3" id="XZc-WJ-akt"/>
-                        <outlet property="box8Image" destination="oP9-wa-GSY" id="gcf-ht-F50"/>
-                        <outlet property="box9" destination="ImA-TH-bA1" id="0S7-zg-gWE"/>
-                        <outlet property="box9Image" destination="BP7-9s-E60" id="S4T-21-JbO"/>
+                        <outlet property="annoucementLabel" destination="WO9-MN-hXA" id="0mv-Ev-gDe"/>
+                        <outlet property="box0" destination="OUz-O9-oZ7" id="cJr-qM-EV9"/>
+                        <outlet property="box0Image" destination="V5m-or-Yne" id="Rza-4g-b2R"/>
+                        <outlet property="box1" destination="2GE-Py-zfc" id="bxS-Jb-SLt"/>
+                        <outlet property="box1Image" destination="o26-r2-ttj" id="KMJ-et-r9z"/>
+                        <outlet property="box2" destination="c3r-7W-ovv" id="a7Q-dv-Obx"/>
+                        <outlet property="box2Image" destination="5yu-5O-1YP" id="Dzw-I6-1in"/>
+                        <outlet property="box3" destination="vCo-5e-BDR" id="V0B-iz-XMM"/>
+                        <outlet property="box3Image" destination="GTy-VT-k68" id="WSl-nh-JX8"/>
+                        <outlet property="box4" destination="O5p-Ki-4ee" id="FT0-tT-dkP"/>
+                        <outlet property="box4Image" destination="XIb-ky-rXP" id="E6z-hD-2ye"/>
+                        <outlet property="box5" destination="ygD-8X-gzc" id="RJ6-Yu-SQs"/>
+                        <outlet property="box5Image" destination="4bj-CY-cXI" id="KG6-71-SsH"/>
+                        <outlet property="box6" destination="fkO-y4-0n8" id="Yl8-G1-gEF"/>
+                        <outlet property="box6Image" destination="5Dl-Um-k4x" id="3Gt-tr-b9b"/>
+                        <outlet property="box7" destination="bsV-Bm-de3" id="ep7-eP-QaV"/>
+                        <outlet property="box7Image" destination="oP9-wa-GSY" id="jZM-a5-bc4"/>
+                        <outlet property="box8" destination="ImA-TH-bA1" id="YHL-2P-1jG"/>
+                        <outlet property="box8Image" destination="BP7-9s-E60" id="WGP-Df-ncM"/>
+                        <outlet property="rematchButton" destination="VeS-6u-gNR" id="NaK-tR-Bin"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" id="Mze-sy-Sqj">
-                    <rect key="frame" x="0.0" y="0.0" width="390" height="130"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSc-G4-W9J">
-                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="130" id="hJG-A7-ICM"/>
-                                <constraint firstAttribute="width" constant="130" id="jyl-T4-0AR"/>
-                            </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-C0-h7j">
-                            <rect key="frame" x="130" y="1" width="130" height="128"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1AN-rK-FFB">
-                            <rect key="frame" x="260" y="1" width="130" height="128"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="Bge-ye-SzA"/>
-                </stackView>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
