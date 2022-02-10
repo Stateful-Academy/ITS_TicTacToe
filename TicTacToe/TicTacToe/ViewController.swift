@@ -55,43 +55,28 @@ class ViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func rematchButtonTapped(_ sender: Any) {
-        restartGame()
+        playerMove = 10
+        gamestate = [10,10,10,10,10,10,10,10,10]
+        currentPlayer = 1
+        moveCount = 0
+        gameIsActive = true
+        box0Image.image = nil
+        box1Image.image = nil
+        box2Image.image = nil
+        box3Image.image = nil
+        box4Image.image = nil
+        box5Image.image = nil
+        box6Image.image = nil
+        box7Image.image = nil
+        box8Image.image = nil
+        toggleButtons()
+        annoucementLabel.text = "Player 1 - Start us off!"
     }
     
     @IBAction func boxTapped(sender: UIButton) {
-        switch sender {
-        case box0:
-            boxClicked(sender)
-        case box1:
-            boxClicked(sender)
-        case box2:
-            boxClicked(sender)
-        case box3:
-            boxClicked(sender)
-        case box4:
-            boxClicked(sender)
-        case box5:
-            boxClicked(sender)
-        case box6:
-            boxClicked(sender)
-        case box7:
-            boxClicked(sender)
-        case box8:
-            boxClicked(sender)
-        default:
-            break
-        }
-    }
-    
-    func boxClicked(_ sender: UIButton) {
         print("Box \(sender.tag) was clicked")
-        let selectedBox = sender.tag
+        let spot = sender.tag
         // Update the game state
-        updateGame(spot: selectedBox)
-        
-    }
-
-    func updateGame(spot: Int) {
         if gamestate[spot] == 10 {
             // this is a valid move
             gamestate[spot] = currentPlayer
@@ -119,14 +104,10 @@ class ViewController: UIViewController {
             }
         }
         if gameIsActive {
-            updatePlayer()
+            let updatedPlayer = currentPlayer == 1 ? 2:1
+            currentPlayer = updatedPlayer
+            annoucementLabel.text = "It's Player \(updatedPlayer)'s turn!"
         }
-    }
-    
-    func updatePlayer() {
-        let updatedPlayer = currentPlayer == 1 ? 2:1
-        currentPlayer = updatedPlayer
-        annoucementLabel.text = "It's Player \(updatedPlayer)'s turn!"
     }
     
     func checkDraw() {
@@ -161,25 +142,6 @@ class ViewController: UIViewController {
             break
         }
         
-    }
-    
-    func restartGame() {
-        playerMove = 10
-        gamestate = [10,10,10,10,10,10,10,10,10]
-        currentPlayer = 1
-        moveCount = 0
-        gameIsActive = true
-        box0Image.image = nil
-        box1Image.image = nil
-        box2Image.image = nil
-        box3Image.image = nil
-        box4Image.image = nil
-        box5Image.image = nil
-        box6Image.image = nil
-        box7Image.image = nil
-        box8Image.image = nil
-        toggleButtons()
-        annoucementLabel.text = "Player 1 - Start us off!"
     }
     
     func toggleButtons() {
