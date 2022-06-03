@@ -103,9 +103,12 @@ class ViewController: UIViewController {
                 annoucementLabel.text = "Thats game! Great work player \(currentPlayer)"
             }
         }
+        // Outside the for in, we check if the game is active and update the players
         if gameIsActive {
+            // to update the current player
             let updatedPlayer = currentPlayer == 1 ? 2:1
             currentPlayer = updatedPlayer
+            // add the announcement text
             annoucementLabel.text = "It's Player \(updatedPlayer)'s turn!"
         }
     }
@@ -141,7 +144,6 @@ class ViewController: UIViewController {
         default:
             break
         }
-        
     }
     
     func toggleButtons() {
@@ -155,6 +157,5 @@ class ViewController: UIViewController {
         box7.isEnabled = gameIsActive
         box8.isEnabled = gameIsActive
     }
-    
 }
 
